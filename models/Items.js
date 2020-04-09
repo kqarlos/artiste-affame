@@ -1,7 +1,5 @@
-//dependencies //straight from docs
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-
 
 //creates schema
 const ItemSchema = new Schema({
@@ -13,7 +11,5 @@ const ItemSchema = new Schema({
 
 });
 
-//models our collection
 const Item = mongoose.model('Item', ItemSchema);
- 
 module.exports =Item;
